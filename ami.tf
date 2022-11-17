@@ -1,4 +1,4 @@
 resource "aws_ami_from_instance" "ami" {
   name               = "terraform-ami-lc"
-  source_instance_id = "i-00f98c576f41bac4b"
+  source_instance_id = "i-090f4a3164847a6e5"
 }

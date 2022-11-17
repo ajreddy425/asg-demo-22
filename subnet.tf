@@ -1,6 +1,6 @@
 resource "aws_subnet" "sub1" {
   vpc_id            = aws_vpc.main.id
-  cidr_block        = "10.0.0.0/24"
+  cidr_block        = var.sub1_cidr
   availability_zone = "us-east-1a"
 
   tags = {

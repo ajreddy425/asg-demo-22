@@ -1,7 +1,7 @@
 // ec2 in the Public Subnet 01 (FAQ 5/5)
 
 resource "aws_instance" "web_server1" {
-  ami                         = "ami-026b57f3c383c2eec"
+  ami                         = var.ami_id
   instance_type               = "t2.micro"
   associate_public_ip_address = true
   key_name                    = "8aws-7am"
